@@ -1,0 +1,3 @@
+[submodule "assets/bulma-scss"]
+	path = assets/bulma-scss
+	url = https://github.com/j1mc/bulma-scss.git
