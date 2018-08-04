@@ -28,7 +28,7 @@ name = "Jim Campbell"
   wide_desc = """
     And I admit that I sometimes like checking out cultural events or
     visiting our parks. Some events offer cheese, and you can often rest or
-    take naps in a park.
+    take a nap in a park.
     """
 
   bob_desc = """
@@ -41,7 +41,7 @@ name = "Jim Campbell"
   background = "grey-lighter"
 
 [params.scss]
-  #To come later
+  # To come later
 
 [params.pictures]
   it_is_me = "it-is-me.jpg"
