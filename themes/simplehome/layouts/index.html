@@ -1,0 +1,75 @@
+{{ partial "header.html" . }}
+
+<section class="section">
+  <div class="container">
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-8">
+        <div class="tile">
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child box notification">
+              <p class="title">{{ .Site.Title }}</p>
+              <p class="subtitle">
+                {{ .Site.Params.note }}
+                <figure class="image is-4by5">
+                  <img src="{{ .Site.Params.pictures.it_is_me }}">
+                </figure>
+              </p>
+            </article>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child box notification is-light">
+              <figure class="image is-5by4">
+                <img src="{{ .Site.Params.pictures.center_pic }}">
+              </figure>
+              <br />
+              <p class="subtitle">
+                {{ .Site.Params.desc }}
+              </p>
+              <p class="subtitle">
+                {{ .Site.Params.more_desc }}
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="tile is-parent is-vertical">
+          <article class="tile is-child box notification is-light">
+            <figure class="image is-3by1">
+              <img src="{{ .Site.Params.pictures.low_wide_on_top }}">
+            </figure>
+            <br />
+            <p class="subtitle">
+              {{ .Site.Params.wide_desc }}
+            </p>
+            <figure class="image is-3by1">
+              <img src="{{ .Site.Params.pictures.low_wide_on_bottom }}">
+            </figure>
+          </article>
+        </div>
+      </div>
+      <div class="tile is-vertical is-parent">
+        <article class="tile is-child box">
+          <figure class="image is-4by5">
+            <img src="{{ .Site.Params.pictures.tall_on_top }}">
+          </figure>
+          <br />
+          <p class="subtitle">
+            {{ .Site.Params.city_desc }}
+          </p>
+        </article>
+        <article class="tile is-child box">
+          <figure class="image is-4by5">
+            <img src="{{ .Site.Params.pictures.tall_on_bottom }}">
+          </figure>
+          <br />
+          <p class="subtitle">
+            {{ .Site.Params.bob_desc }}
+            <em>{{ .Site.Params.bob_album }}</em>.
+          </p>
+        </article>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{{ partial "footer.html" . }}

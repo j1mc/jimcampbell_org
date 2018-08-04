@@ -1,0 +1,52 @@
+baseURL = "https://jimcampbell.org/"
+languageCode = "en-us"
+title = "jimcampbell.org"
+theme = "simplehome"
+enableGitInfo = true
+
+[author]
+name = "Jim Campbell"
+
+[params]
+  note = "Welcome to my interwebs geo-homepage. Thanks for visiting!"
+  desc = """
+    I'm Jim, and I work as a Linux Systems Engineer in Chicago, Illinois
+    (although the picture above was taken in St. Louis, Missouri).
+    """
+
+  more_desc = """
+    In my free time I enjoy cooking, reading, movies,  music, singing,
+    interpretive dance, archeology, paragliding and amateur acupuncture. And
+    by that I mean like cheese and naps.
+    """
+
+  city_desc = """
+    I've lived in Chicago for a good while, and it's a great place to live,
+    work and visit. For one, we have buildings that look like corn cobs.
+    """
+
+  wide_desc = """
+    And I admit that I sometimes like checking out cultural events or
+    visiting our parks. Some events offer cheese, and you can often rest or
+    take naps in a park.
+    """
+
+  bob_desc = """
+    And I do actually like music, too. My favorite performer (by far) is Bob
+    Dylan. My current favorite album of his is
+    """
+  bob_album = "John Wesley Harding"
+
+[params.style]  # See https://bulma.io/documentation/overview/colors/
+  background = "grey-lighter"
+
+[params.scss]
+  #To come later
+
+[params.pictures]
+  it_is_me = "it-is-me.jpg"
+  center_pic = "center-pic.jpg"
+  tall_on_top = "tall-00-on-top.jpg"
+  tall_on_bottom = "tall-01-on-bottom.jpg"
+  low_wide_on_top = "wide-00-on-top.jpg"
+  low_wide_on_bottom = "wide-01-on-bottom.jpg"
