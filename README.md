@@ -8,5 +8,5 @@ SCSS files to minified and fingerprinted CSS.
 ## Links
 
 Hugo: https://gohugo.io
-Bulma CSS: https://bulma.io
 
+Bulma CSS: https://bulma.io
