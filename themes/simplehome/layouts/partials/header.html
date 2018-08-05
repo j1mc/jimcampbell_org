@@ -1,28 +1,33 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-
-<head>
-    <meta charset="utf-8"> {{ .Hugo.Generator }}
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="{{ .Site.Author.name }}">
-    <meta property="og:url" content="{{ .Permalink }}"> {{ if .IsHome -}}
-    <title>{{ .Site.Title }}</title>
-    <meta property="og:title" content="{{ .Site.Title }}">
-    <meta property="og:type" content="website">
-    <meta name="description" content="{{ .Site.Params.description }}"> {{- else -}}
-    <title>{{ .Title }} - {{ .Site.Title }}</title>
-    <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
-    <meta property="og:type" content="article">
-    <meta name="description" content="{{ .Description }}"> {{- end }}
-
-    {{ $main := resources.Get "bulma-scss/bulma.scss" | resources.ToCSS "css/main.css" }}
- 
-    <link rel="stylesheet" href="{{ ($main | minify | fingerprint).Permalink }}">
-
-    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-    <link href="{{ " index.xml " | relURL }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
-</head>
-
-<body class="has-background-{{ .Site.Params.style.background }}">
+<div class="container">
+    <div class="tile is-ancestor">
+        <div class="tile is-12">
+            <div class="tile">
+                <div class="tile is-parent">
+                    <article class="tile is-child box notification is-{{ .Site.Params.style.navbar }}">
+                        <nav class="level">
+                            <div class="level-left">
+                                <div class="level-item has-text-centered">
+                                    <div>
+                                        <p class="level-item has-text-centered">
+                                            <a class="title is-5" href="/">{{ .Site.Params.Expressive_Title }}</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="level-right">
+                                {{ $currentPage := . }} {{ range .Site.Menus.main }}
+                                <div class="level-item has-text-centered">
+                                    <div>
+                                        <p class="level-item has-text-centered">
+                                            <a class="title is-5{{if or ($currentPage.IsMenuCurrent " main " .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                {{ end }}
+                            </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

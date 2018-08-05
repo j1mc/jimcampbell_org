@@ -7,8 +7,24 @@ enableGitInfo = true
 [author]
 name = "Jim Campbell"
 
+[menu]
+  [[menu.main]]
+  name = "Projects"
+  url = "projects/"
+  identifier = "projects"
+  weight = 10.0
+
+  [[menu.main]]
+  name = "Posts"
+  url = "post/"
+  identifier = "post"
+  weight = 20.0 
+
 [params]
+  expressive_title = "Jim Campbell Dot Org"
+
   note = "Welcome to my interwebs geo-homepage. Thanks for visiting!"
+
   desc = """
     I'm Jim, and I work as a Linux Systems Engineer in Chicago, Illinois
     (although the picture above was taken in St. Louis, Missouri).
@@ -38,7 +54,8 @@ name = "Jim Campbell"
   bob_album = "John Wesley Harding"
 
 [params.style]  # See https://bulma.io/documentation/overview/colors/
-  background = "grey-lighter"
+  background = "grey-light"
+  navbar = "background"
 
 [params.scss]
   # To come later
