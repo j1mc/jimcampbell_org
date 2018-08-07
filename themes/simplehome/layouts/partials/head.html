@@ -20,8 +20,8 @@
     {{ $main := resources.Get "bulma-scss/bulma.scss" | resources.ToCSS "css/main.css" }}
  
     <link rel="stylesheet" href="{{ ($main | minify | fingerprint).Permalink }}">
+    <link rel="stylesheet" href="/css/fontawesome-all.min.css">
 
-    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
     <link href="{{ " index.xml " | relURL }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
 </head>
 
