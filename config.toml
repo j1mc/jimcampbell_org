@@ -10,16 +10,22 @@ name = "Jim Campbell"
 [menu]
 
   [[menu.main]]
+  name = "Archives"
+  url = "/post/"
+  identifier = "post"
+  weight = 10.0
+
+  [[menu.main]]
   name = "Projects"
   url = "/project/"
   identifier = "project"
-  weight = 10.0
+  weight = 20.0
 
   [[menu.main]]
   name = "About"
   url = "/about/"
   identifier = "about"
-  weight = 20.0 
+  weight = 30.0 
 
 
 [params]

@@ -11,11 +11,9 @@
 
 <section class="section">
     <div class="container">
-    {{ range (where .Data.Pages "Section" "project") }}
-    {{ .Render "summary" }}
+    {{- range (where .Data.Pages "Section" "project") }}
     {{ partial "project_file" . }}
     {{- end }}
-
 </div>
 </section>
 

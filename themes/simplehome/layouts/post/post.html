@@ -14,7 +14,6 @@
     <div class="columns">
       <div class="column is-four-fifths">
         {{ range (where .Data.Pages "Section" "post") }}
-        {{ .Render "summary" }}
         {{ partial "post_file" . }}
         {{- end }}
       </div>
@@ -25,8 +24,9 @@
     </div>
   </div>
   </div>
+  
+</div>
 </section>
-
 
 <section class="section">
 </div>

@@ -1,0 +1,22 @@
+<section class="level">
+    <div class="container">
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical">
+                <div class="tile">
+                    <div class="tile is-parent">
+                        <article class="tile is-child box notification">
+                            <p class="title">
+                                <a href="{{ .Permalink }}">{{ .Title }}</a>
+
+                                <span class="subtitle">{{ .Date.Format "Jan 2, 2006" }}</span>
+                            </p>
+                            <div class="content is-size-5">
+                            <p>{{ .Summary }}</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

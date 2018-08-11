@@ -9,16 +9,11 @@
     <div class="container">
       <div class="columns">
 
-        <div class="column is-four-fifths">
+        <div class="column is-10">
           <!-- Content -->
+
           <div style="min-height:56vh">
-              {{- range first 1 (where .Paginator.Pages "Section" "post") }}
-                {{ .Render "full_content" }}
-              {{- end }}
-          </div>
-          <br />
-          <div style="min-height:56vh">
-              {{- range after 1 (first 5 (where .Paginator.Pages "Section" "post")) }}
+              {{- where .Paginator.Pages "Section" "post" }}
                 {{ .Render "summary" }}
               {{- end }}
           </div>
@@ -27,7 +22,7 @@
           {{ partial "pagination-list.html" . }}
         </div>
 
-        <div class="column is-one-fifth">
+        <div class="column is-narrow">
           <!-- Taxonomy list -->
           {{ partial "sidenav.html" . }}
         </div>
@@ -36,5 +31,3 @@
     </div>
 
   </section>
-
-{{ end }}
