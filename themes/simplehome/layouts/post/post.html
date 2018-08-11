@@ -1,0 +1,36 @@
+{{ define "title" }}
+  <!-- This will override the default value set in baseof.html; i.e., "{{.Site.Title}}" in the original example-->
+{{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+
+<section>
+  </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-four-fifths">
+        {{ range (where .Data.Pages "Section" "post") }}
+        {{ .Render "summary" }}
+        {{ partial "post_file" . }}
+        {{- end }}
+      </div>
+      <div class="column is-one-fifth">
+        <!-- Taxonomy list -->
+        {{ partial "sidenav.html" . }}
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<section class="section">
+</div>
+</div>
+</section>
+
+{{ end }}

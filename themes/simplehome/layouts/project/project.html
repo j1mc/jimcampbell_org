@@ -3,13 +3,25 @@
 {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
 {{ define "main" }}
+
+<section>
+  <div>
+  </div>
+</section>
+
 <section class="section">
-  <div class="container">
-      {{ range first 5 (where .Data.Pages "Section" "project") }}
+    <div class="container">
+    {{ range (where .Data.Pages "Section" "project") }}
     {{ .Render "summary" }}
     {{ partial "project_file" . }}
     {{- end }}
 
+</div>
+</section>
+
+<section class="section">
+  </div>
   </div>
 </section>
+
 {{ end }}
