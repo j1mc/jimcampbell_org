@@ -9,16 +9,16 @@ name = "Jim Campbell"
 
 [menu]
   [[menu.main]]
-  name = "Projects"
-  url = "project/"
-  identifier = "project"
-  weight = 10.0
+  name = "Posts"
+  url = "/post/"
+  identifier = "post"
+  weight = 10.0 
 
   [[menu.main]]
-  name = "Posts"
-  url = "post/"
-  identifier = "post"
-  weight = 20.0 
+  name = "Projects"
+  url = "/project/"
+  identifier = "project"
+  weight = 20.0
 
 [params]
   expressive_title = "Jim Campbell Dot Org"
