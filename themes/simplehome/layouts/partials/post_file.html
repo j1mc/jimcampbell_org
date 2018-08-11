@@ -1,0 +1,21 @@
+<section class="level">
+  <div class="container">
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical">
+        <div class="tile">
+          <div class="tile is-parent">
+            <article class="tile is-child box notification">
+              <p class="title is-2">{{ .Title }}</p>
+              <p class="subtitle is-flex" style="justify-content:space-between">
+                <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+              </p>
+              <div class="content is-size-5">
+              {{ .Content }}
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
