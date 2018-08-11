@@ -8,17 +8,19 @@ enableGitInfo = true
 name = "Jim Campbell"
 
 [menu]
-  [[menu.main]]
-  name = "Posts"
-  url = "/post/"
-  identifier = "post"
-  weight = 10.0 
 
   [[menu.main]]
   name = "Projects"
   url = "/project/"
   identifier = "project"
-  weight = 20.0
+  weight = 10.0
+
+  [[menu.main]]
+  name = "About"
+  url = "/about/"
+  identifier = "about"
+  weight = 20.0 
+
 
 [params]
   expressive_title = "Jim Campbell Dot Org"
@@ -54,7 +56,7 @@ name = "Jim Campbell"
   bob_album = "John Wesley Harding"
 
 [params.style]  # See https://bulma.io/documentation/overview/colors/
-  background = "grey-light"
+  background = "grey-lighter"
   navbar = "background"
 
 [params.scss]
