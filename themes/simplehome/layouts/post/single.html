@@ -7,11 +7,33 @@
 <section class="section" style="flex:1">
   <!-- Content -->
   <div class="container">
-    <p class="title">{{ .Title }}</p>
-    <p class="subtitle">{{ .Date.Format "Jan 2, 2006" }}</p>
-    <div class="content">
-      {{ .Content }}
+    <div class="columns">
+      <div class="column is-four-fifths">
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical">
+            <div class="tile">
+              <div class="tile is-parent">
+                <article class="tile is-child box notification">
+                  <p class="title">{{ .Title }}</p>
+                  <p class="subtitle">{{ .Date.Format "Jan 2, 2006" }}</p>
+                  <div class="content is-size-5">
+                    <p>post_single</p>
+                    {{ .Content }}
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-one-fifth">
+          <!-- Taxonomy list -->
+          {{ partial "sidenav.html" . }}
+        </div>
+
     </div>
+  </div>
   </div>
 </section>
 {{ end }}

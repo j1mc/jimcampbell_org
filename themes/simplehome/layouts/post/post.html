@@ -5,18 +5,25 @@
 {{ define "main" }}
 
 <section>
-  </div>
-  </div>
+  <div></div>
 </section>
 
 <section class="section">
   <div class="container">
     <div class="columns">
       <div class="column is-four-fifths">
+      <div style="min-height:56vh">
         {{ range (where .Data.Pages "Section" "post") }}
         {{ partial "post_file" . }}
         {{- end }}
       </div>
+
+      <section class="level">
+          <div></div>
+        </section>
+      {{ partial "pagination-single-all.html" . }}
+    </div>
+
       <div class="column is-one-fifth">
         <!-- Taxonomy list -->
         {{ partial "sidenav.html" . }}

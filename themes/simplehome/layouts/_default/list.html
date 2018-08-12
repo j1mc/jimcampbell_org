@@ -6,7 +6,7 @@
   	  <div class="column is-8">
   	  	<article class="content">
   	  	  <h1 class="title">{{ .Title }}</h1>
-  	  	    {{ range .Paginator.Pages }}
+						{{ range .Paginator.Pages }}
   	  	      {{ .Render "summary" }}
   	  	    {{ end }}
   	  	  </article>
