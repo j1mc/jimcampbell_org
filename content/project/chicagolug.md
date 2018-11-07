@@ -11,6 +11,6 @@ weight = "30"
 +++
 
 I've been a co-organizer of the Chicago GNU/Linux User Group since October of
-2012. This primarily involves organizing meetings and social activities,
-building-out and maintaining LUG infrastructure, sharing updates on social
-media, and similar LUG-type activities.
+2012. As co-organizer, I handle organizing meetings and social activities,
+building-out and maintaining group infrastructure, sharing updates on social
+media, and handling other duties as assigned. : ) 

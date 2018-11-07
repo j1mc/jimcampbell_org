@@ -1,0 +1,40 @@
+@import "bulma-scss/utilities/initial-variables";
+
+/* INITIAL COLORS */
+
+$black: #0a0a0a;
+$white: #ffffff;
+$orange: #ff470f;
+$yellow: #ffdd57;
+$green: #23d160;
+$turquoise: #00d1b2;
+$cyan: #209cee;
+$blue: #3273dc;
+$purple: #b86bff;
+$red: #ff3860;
+
+$primary: $turquoise;
+$info: $cyan;
+$success: $green;
+$warning: $yellow;
+$danger: $red;
+$link: $blue;
+$dark: $grey-darker;
+$text: $grey-dark;
+
+/* NAVBAR SETTINGS */
+
+$navbar-height: 4.0rem;
+
+/* FONTS */
+
+/* FOOTER */
+$footer-background-color: $white-bis;
+
+/* $footer-background-color: $dark */
+
+$pagination-color: $dark;
+$pagination-border-color: $grey-darker;
+$pagination-current-background-color: $info;
+$pagination-hover-color: $link;
+$pagination-hover-border-color: $grey-darker;

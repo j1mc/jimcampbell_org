@@ -1,14 +1,14 @@
 +++
 type = "post"
-title = "LibrePlanet 2016 - Freedom Sympatico"
-date = "2018-08-10T12:00:00-06:00"
-description = "A write-up from the LibrePlanet 2016 conference"
+title = "The Mostly Okay LibrePlanet 2018 - Freedom Sympatico"
+date = "2018-10-12T12:00:00-06:00"
+description = "A mostly good write-up from the LibrePlanet 2019 conference"
 categories = "Conference"
 tags = "libreplanet"
-slug = "2016-03-25-libreplanet-2016-freedom-sympatico"
+slug = "2018-10-12-the-mostly-ok-libreplanet-2018-freedom-sympatico"
 +++
 
-Hello!! I emerge from my blogging slumber as part of some
+Greets!! I emerge from my blogging slumber as part of some
 post-hospital-merger / post-Affordable-Care-Act-administration free software
 activities. You see, I went to LibrePlanet this past weekend, and I was as
 happy as this guy to be there:
