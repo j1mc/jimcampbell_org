@@ -4,7 +4,7 @@ title = "jimcampbell.org"
 theme = "simplehome"
 enableGitInfo = true
 enableEmoji = true
-paginate = "10"
+paginate = "7"
 
 [author]
 name = "Jim Campbell"
@@ -61,7 +61,7 @@ name = "Jim Campbell"
     And I do actually like music, too. My favorite performer (by far) is Bob
     Dylan. My current favorite album of his is
     """
-  bob_album = "John Wesley Harding"
+  bob_album = "Time Out Of Mind"
 
 [params.style]  # See https://bulma.io/documentation/overview/colors/
   background = "grey-lighter"
