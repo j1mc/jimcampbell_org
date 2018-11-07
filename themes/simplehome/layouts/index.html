@@ -17,12 +17,13 @@
               {{- end }}
           </div>
           <br />
-          <div style="min-height:56vh">
-              {{- range after 1 (first 5 (where .Paginator.Pages "Section" "post")) }}
+          <div style="min-height:48vh">
+              {{- range after 1 (where .Paginator.Pages "Section" "post") }}
                 {{ .Render "summary" }}
               {{- end }}
           </div>
-
+          <br />
+         
           <!-- Pagination -->
           {{ partial "pagination-list.html" . }}
         </div>

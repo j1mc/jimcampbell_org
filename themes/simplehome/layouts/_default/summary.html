@@ -5,12 +5,11 @@
                 <div class="tile">
                     <div class="tile is-parent">
                         <article class="tile is-child box notification">
-                            <p class="title">
-                                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                            <p class="title is-size-4">
+                                <a href="{{ .Permalink }}">{{ .Title }}</a></p>
 
-                                <span class="subtitle">{{ .Date.Format "Jan 2, 2006" }}</span>
-                            </p>
-                            <div class="content is-size-5">
+                                <p class="subtitle is-size-6">{{ .Date.Format "Jan 2, 2006" }}</p>
+                            <div class="content is-size-6">
                             <p>{{ .Summary }}</p>
                             </div>
                         </article>

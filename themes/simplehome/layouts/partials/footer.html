@@ -1,2 +1,56 @@
+<br />
+<div class="container">
+    <div class="tile is-ancestor">
+        <div class="tile">
+            <div class="tile is-parent">
+                <article class="tile is-child box notification is-{{ .Site.Params.style.navbar }}">
+                    <div class="columns">
+                        <!-- Sitemap -->
+                        <div class="column is-one-fifth-desktop">
+                            <p>
+                                <b>Site Navigation</b>
+                            </p>
+                            <article class="post">
+                                <h3><a href="{{ .Site.BaseURL }}post/">Archives</a></h3>
+                            </article>
+                            <article class="post">
+                                <h3><a href="{{ .Site.BaseURL }}projects/">Projects</a></h3>
+                            </article>
+                            <article class="post">
+                                <h3><a href="{{ .Site.BaseURL }}about/">About </a></h3>
+                            </article>
+                        </div>
+                        <div class="column is-one-fifth-desktop">
+                            <!-- Social -->
+                            <p>
+                                <b>Social and Contact</b>
+                            </p>
+                            {{ range (where .Site.Pages.ByWeight "Section" "social") }}
+                            <article>
+                                <h3><a href="{{ .Params.social_url }}" target="_blank">{{ .Params.title }}</a></h3>
+                            </article>
+                            {{ end }}
+                            <article class="post">
+                                <h3><a href="{{ .Site.BaseURL }}contact/">Contact Me</a></h3>
+                            </article>
+                        </div>
+                        <div class="column is-one-fifth-desktop">
+                            <p>
+                                <b>A Bit More</b>
+                            </p>
+                            <article class="post">
+                                <h3><a href="{{ .Site.BaseURL }}about-site/">About this Site</a></h3>
+                            </article>
+                            <article class="post">
+                                <h3><a href="{{ .Site.BaseURL }}venue/">Site Developer Team</a></h3>
+                            </article>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

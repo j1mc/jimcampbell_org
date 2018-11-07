@@ -2,8 +2,9 @@
 <html lang="{{ .Site.LanguageCode }}">
 
 <head>
-    <meta charset="utf-8"> {{ .Hugo.Generator }}
+    {{ $main := resources.Get "main.scss" | resources.ToCSS "css/main.css" }}
 
+    <meta charset="utf-8"> {{ .Hugo.Generator }}
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="{{ .Site.Author.name }}">
@@ -17,8 +18,6 @@
     <meta property="og:type" content="article">
     <meta name="description" content="{{ .Description }}"> {{- end }}
 
-    {{ $main := resources.Get "bulma-scss/bulma.scss" | resources.ToCSS "css/main.css" }}
- 
     <link rel="stylesheet" href="{{ ($main | minify | fingerprint).Permalink }}">
     <link rel="stylesheet" href="/css/fontawesome-all.min.css">
 
@@ -26,4 +25,7 @@
 </head>
 
 <body class="has-background-{{ .Site.Params.style.background }}">
-<br />
+
+<div class="columns is-hidden-mobile">
+    <div class="column"></div>
+</div>

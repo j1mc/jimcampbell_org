@@ -5,8 +5,8 @@
 {{ define "main" }}
 
 <section class="section" style="flex:1">
-  <!-- Content -->
   <div class="container">
+  <!-- Content -->
     <div class="columns">
       <div class="column is-four-fifths">
         <div class="tile is-ancestor">
@@ -14,12 +14,12 @@
             <div class="tile">
               <div class="tile is-parent">
                 <article class="tile is-child box notification">
-                  <p class="title">{{ .Title }}</p>
-                  <p class="subtitle">{{ .Date.Format "Jan 2, 2006" }}</p>
-                  <div class="content is-size-5">
-                    <p>post_single</p>
+                  <p class="title is-size-4">{{ .Title }}</p>
+                  <p class="subtitle is-size-6">{{ .Date.Format "January 2, 2006" }}</p>
+                  <div class="content is-size-6">
                     {{ .Content }}
                   </div>
+                {{ partial "gitinfo.html" . }}
                 </article>
               </div>
             </div>

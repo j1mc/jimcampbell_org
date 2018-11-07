@@ -1,34 +1,31 @@
 <div class="container">
   <div class="tile is-ancestor">
     <div class="tile">
-      <div class="tile">
         <div class="tile is-parent">
           <article class="tile is-child box notification is-{{ .Site.Params.style.navbar }}">
             <nav class="level">
               <div class="level-left">
                 <div class="level-item has-text-centered">
                   <div>
-                    <p class="level-item has-text-centered">
-                      <a class="title is-4" href="/">{{ .Site.Params.Expressive_Title }}</a>
+                    <p>
+                      <a class="title is-5 has-text-centered" href="/">{{ .Site.Params.Expressive_Title }}</a>
                     </p>
+                    <p class="is-size-6">Mostly a Linux Systems Blog</p>
                   </div>
                 </div>
               </div>
               <div class="level-right">
                 {{ $currentPage := . }} {{ range .Site.Menus.main }}
                 <div class="level-item has-text-centered">
-                  <div>
-                    <p class="level-item has-text-centered">
-                      <a class="title is-4{{if or ($currentPage.IsMenuCurrent " main " .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+                    <p>
+                      <a class="title is-5{{if or ($currentPage.IsMenuCurrent " main " .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
                     </p>
-                  </div>
                 </div>
                 {{ end }}
               </div>
             </nav>
           </article>
         </div>
-      </div>
     </div>
   </div>
 </div>

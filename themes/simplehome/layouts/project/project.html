@@ -1,5 +1,5 @@
 {{ define "title" }}
-  <!-- This will override the default value set in baseof.html; i.e., "{{.Site.Title}}" in the original example-->
+<!-- This will override the default value set in baseof.html; i.e., "{{.Site.Title}}" in the original example-->
 {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
 {{ define "main" }}
@@ -10,11 +10,11 @@
 </section>
 
 <section class="section">
-    <div class="container">
+  <div class="container">
     {{- range (where .Data.Pages "Section" "project") }}
     {{ partial "project_file" . }}
     {{- end }}
-</div>
+  </div>
 </section>
 
 <section class="section">

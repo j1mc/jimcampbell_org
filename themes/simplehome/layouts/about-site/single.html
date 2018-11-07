@@ -1,0 +1,30 @@
+{{ define "title" }}
+<!-- This will override the default value set in baseof.html; i.e., "{{.Site.Title}}" in the original example-->
+{{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+
+<section class="section" style="flex:1">
+  <!-- Content -->
+  <div class="container">
+
+    <section class="level">
+      <div class="container">
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical">
+            <div class="tile">
+              <div class="tile is-parent">
+                <article class="tile is-child box notification">
+                  <p class="title is-size-4">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                  </p>
+                  <div class="content is-size-5">
+                    {{ .Content }}
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+    </section>
+    <br />
+    {{ end }}
