@@ -5,9 +5,7 @@
 {{ define "main" }}
 
 <section class="section" style="flex:1">
-  <!-- Content -->
   <div class="container">
-
     <section class="level">
       <div class="container">
         <div class="tile is-ancestor">
@@ -19,12 +17,23 @@
                     <a href="{{ .Permalink }}">{{ .Title }}</a>
                   </p>
                   <div class="content is-size-5">
-                    {{ .Content }}
+                      {{- .Params.note -}}
+                      <br />
+                      {{ $img := ( .Resources.ByType "image" ) }}
+                      {{ range $img }}
+                      <figure class="image is-2by1">
+                        <img src="{{ .RelPermalink }}">
+                      </figure>
+                      {{ end }}
+                    {{- .Content -}}
                   </div>
                 </article>
               </div>
             </div>
           </div>
+        </div>
+      </div>
     </section>
-    <br />
-    {{ end }}
+  </div>
+</section>
+{{ end }}
