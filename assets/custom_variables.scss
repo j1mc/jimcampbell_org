@@ -38,3 +38,15 @@ $pagination-border-color: $grey-darker;
 $pagination-current-background-color: $info;
 $pagination-hover-color: $link;
 $pagination-hover-border-color: $grey-darker;
+
+
+/* Prevent images from exceeding their container width*/
+
+.image {
+    &.is-square img, &.is-1by1 img, &.is-5by4 img, &.is-4by3 img, &.is-3by2 img, &.is-5by3 img, &.is-16by9 img, &.is-2by1 img, &.is-3by1 img, &.is-4by5 img, &.is-3by4 img, &.is-2by3 img, &.is-3by5 img, &.is-9by16 img, &.is-1by2 img, &.is-1by3 img {
+      height: 100%;
+      max-width: 100%;
+      width: auto;
+    }
+  }
+ 

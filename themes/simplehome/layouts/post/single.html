@@ -4,7 +4,7 @@
 {{ end }}
 {{ define "main" }}
 
-<section class="section" style="flex:1">
+<section class="section">
   <div class="container">
   <!-- Content -->
     <div class="columns">
@@ -17,10 +17,10 @@
                   <p class="title is-size-4">{{ .Title }}</p>
                   <p class="subtitle is-size-6">{{ .Date.Format "January 2, 2006" }}</p>
                   <div class="is-size-6">
-                      {{ $img := ( .Resources.ByType "image" ).GetMatch "*featured-image*" }}
+                      {{ $img := ( .Resources.ByType "image" ).GetMatch "*featured_image*" }}
                       {{ with $img }}
-                      {{ $img := .Fill "660x220 smart" }}
-                      <figure class="image is-3by1">
+                      {{ $img := .Resize "1005x" }}
+                      <figure class="image">
                         <img src="{{ .RelPermalink }}">
                       </figure>
                       {{ end }}
