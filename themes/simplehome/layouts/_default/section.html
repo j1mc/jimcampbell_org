@@ -12,22 +12,10 @@
         <div class="column is-10">
           <!-- Content -->
 
-          <div style="min-height:56vh">
-              {{- where .Paginator.Pages "Section" "post" }}
-                {{ .Render "summary" }}
-              {{- end }}
-          </div>
 
-          <!-- Pagination -->
-          {{ partial "pagination-list.html" . }}
         </div>
-
-        <div class="column is-narrow">
-          <!-- Taxonomy list -->
-          {{ partial "sidenav.html" . }}
-        </div>
-
       </div>
     </div>
 
   </section>
+{{ end }}

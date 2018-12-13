@@ -31,3 +31,6 @@ of a [few selected](https://github.com/solutionroute/hugo-smorg)
 [Hugo themes](https://github.com/sudorook/capsule) that also use the Bulma CSS
 framework. Without this documentation and these examples, this site would
 still be here but it would look worse.
+
+Content here should be interpreted as the opinion of these cats, but not as
+the opinion of my employer.

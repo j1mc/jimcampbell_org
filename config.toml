@@ -1,5 +1,4 @@
 baseURL = "https://jimcampbell.org/"
-languageCode = "en-us"
 title = "jimcampbell.org"
 theme = "simplehome"
 enableGitInfo = true
@@ -9,31 +8,10 @@ paginate = "7"
 [author]
 name = "Jim Campbell"
 
-[menu]
-
-  [[menu.main]]
-  name = "Archives"
-  url = "/post/"
-  identifier = "post"
-  weight = 10.0
-
-  [[menu.main]]
-  name = "Projects"
-  url = "/project/"
-  identifier = "project"
-  weight = 20.0
-
-  [[menu.main]]
-  name = "About"
-  url = "/about/"
-  identifier = "about"
-  weight = 30.0 
-
-
 [params]
   expressive_title = "Jim Campbell Dot Org"
 
-  note = "Welcome to my interwebs geo-homepage. Thanks for visiting!"
+  note = "Welcome to my interwebs geo-homepage. Thank you for visiting!"
 
   desc = """
     I'm Jim, and I work as a Linux Systems Engineer in Chicago, Illinois
@@ -41,9 +19,9 @@ name = "Jim Campbell"
     """
 
   more_desc = """
-    In my free time I enjoy cooking, reading, movies,  music, singing,
-    interpretive dance, archeology, paragliding and amateur acupuncture. And
-    by that I mean like cheese and naps.
+    In my free time I enjoy volunteering, reading, movies,  music, watching
+    too many Linux videos on YouTube, as well as visiting Chicago restaurants
+    and / or taking weekend naps.
     """
 
   city_desc = """
@@ -52,16 +30,16 @@ name = "Jim Campbell"
     """
 
   wide_desc = """
-    And I admit that I sometimes like checking out cultural events or
-    visiting our parks. Some events offer cheese, and you can often rest or
-    take a nap in a park.
+    And I sometimes like checking out cultural events or visiting our
+    parks. Some events offer cheese, and you can often rest or take a nap in a
+    park.
     """
 
   bob_desc = """
-    And I do actually like music, too. My favorite performer (by far) is Bob
-    Dylan. My current favorite album of his is
+    When it comes to music, my favorite performer (by far) is Bob Dylan. My
+    current favorite album of his is
     """
-  bob_album = "Time Out Of Mind"
+  bob_album = "John Wesley Harding"
 
 [params.style]  # See https://bulma.io/documentation/overview/colors/
   background = "grey-lighter"

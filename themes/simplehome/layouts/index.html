@@ -1,41 +1,75 @@
-{{ define "title" }}
-  <!-- This will override the default value set in baseof.html; i.e., "{{.Site.Title}}" in the original example-->
-{{ .Title }} &ndash; {{ .Site.Title }}
-{{ end }}
-{{ define "main" }}
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
 
-<section class="section" style="flex:1">
-
-    <div class="container">
-      <div class="columns">
-
-        <div class="column is-four-fifths">
-          <!-- Content -->
-          <div style="min-height:56vh">
-              {{- range first 1 (where .Paginator.Pages "Section" "post") }}
-                {{ .Render "full_content" }}
-              {{- end }}
+<section class="section">
+  <div class="container">
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-8">
+        <div class="tile">
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child box notification">
+              <p class="subtitle is-size-6">{{ .Site.Params.note }}
+                <figure class="image is-4by5">
+                  <img src="{{ .Site.Params.pictures.it_is_me }}">
+                </figure>
+              </p>
+            </article>
           </div>
-          <br />
-          <div style="min-height:48vh">
-              {{- range after 1 (where .Paginator.Pages "Section" "post") }}
-                {{ .Render "summary" }}
-              {{- end }}
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child box notification is-light">
+              <figure class="image is-5by4">
+                <img src="{{ .Site.Params.pictures.center_pic }}">
+              </figure>
+              <br />
+              <p class="subtitle is-size-6">
+                {{ .Site.Params.desc }}
+              </p>
+              <p class="subtitle is-size-6">
+                {{ .Site.Params.more_desc }}
+              </p>
+            </article>
           </div>
+        </div>
+        <div class="tile is-parent is-vertical">
+          <article class="tile is-child box notification is-light">
+            <figure class="image is-3by1">
+              <img src="{{ .Site.Params.pictures.low_wide_on_top }}">
+            </figure>
+            <br />
+            <p class="subtitle is-size-6">
+              {{ .Site.Params.wide_desc }}
+            </p>
+            <figure class="image is-3by1">
+              <img src="{{ .Site.Params.pictures.low_wide_on_bottom }}">
+            </figure>
+          </article>
+        </div>
+      </div>
+      <div class="tile is-vertical is-parent">
+        <article class="tile is-child box">
+          <figure class="image is-4by5">
+            <img src="{{ .Site.Params.pictures.tall_on_top }}">
+          </figure>
           <br />
-         
-          <!-- Pagination -->
-          {{ partial "pagination-list.html" . }}
-        </div>
-
-        <div class="column is-one-fifth">
-          <!-- Taxonomy list -->
-          {{ partial "sidenav.html" . }}
-        </div>
-
+          <p class="subtitle is-size-6">
+            {{ .Site.Params.city_desc }}
+          </p>
+        </article>
+        <article class="tile is-child box">
+          <figure class="image is-4by5">
+            <img src="{{ .Site.Params.pictures.tall_on_bottom }}">
+          </figure>
+          <br />
+          <p class="subtitle is-size-6">
+            {{ .Site.Params.bob_desc }}
+            <em>{{ .Site.Params.bob_album }}</em>, though it's not very fair
+            to pick just one of his albums as a favorite.
+          </p>
+        </article>
       </div>
     </div>
 
-  </section>
+  </div>
+</section>
 
-{{ end }}
+{{ partial "footer.html" . }}

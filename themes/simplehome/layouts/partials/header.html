@@ -10,18 +10,15 @@
                     <p>
                       <a class="title is-5 has-text-centered" href="/">{{ .Site.Params.Expressive_Title }}</a>
                     </p>
-                    <p class="is-size-6">Mostly a Linux Systems Blog</p>
                   </div>
                 </div>
               </div>
               <div class="level-right">
-                {{ $currentPage := . }} {{ range .Site.Menus.main }}
                 <div class="level-item has-text-centered">
-                    <p>
-                      <a class="title is-5{{if or ($currentPage.IsMenuCurrent " main " .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+                    <p class="title is-5 has-text-centered">
+                      I'm Glad You're Here
                     </p>
                 </div>
-                {{ end }}
               </div>
             </nav>
           </article>
